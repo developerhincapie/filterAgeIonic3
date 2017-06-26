@@ -1,0 +1,100 @@
+[
+    {
+        "Name": "Juan",
+        "Email": "juan@gmail.com",
+        "Age": 10,
+        "Company": "Ionic",
+        "PhoneNumber": 31312312
+    },
+    {
+        "Name": "Kevin",
+        "Email": "kevin@gmail.com",
+        "Age": 15,
+        "Company": "Ionic",
+        "PhoneNumber": 31312312
+    },
+    {
+        "Name": "Ionic",
+        "Email": "ionic@gmail.com",
+        "Age": 16,
+        "Company": "Ionic",
+        "PhoneNumber": 31312312
+    },
+    {
+        "Name": "Hp",
+        "Email": "hp@gmail.com",
+        "Age": 19,
+        "Company": "HP",
+        "PhoneNumber": 56764543
+    },
+    {
+        "Name": "Asus",
+        "Email": "asus@gmail.com",
+        "Age": 25,
+        "Company": "ASUS",
+        "PhoneNumber": 74565456
+    },
+    {
+        "Name": "Carlos",
+        "Email": "carlos@gmail.com",
+        "Age": 35,
+        "Company": "HP",
+        "PhoneNumber": 65764534
+    },
+    {
+        "Name": "Carmen",
+        "Email": "carmen@gmail.com",
+        "Age": 45,
+        "Company": "carmen",
+        "PhoneNumber": 7886898
+    },
+    {
+        "Name": "Jobs",
+        "Email": "jobs@gmail.com",
+        "Age": 56,
+        "Company": "APPLE",
+        "PhoneNumber": 346456453
+    },
+    {
+        "Name": "Developer",
+        "Email": "developer@gmail.com",
+        "Age": 95,
+        "Company": "INTEL",
+        "PhoneNumber": 9678678
+    },
+    {
+        "Name": "Amd",
+        "Email": "amd@gmail.com",
+        "Age": 45,
+        "Company": "AMD",
+        "PhoneNumber": 4536754
+    },
+    {
+        "Name": "Core",
+        "Email": "core@gmail.com",
+        "Age": 60,
+        "Company": "CORE",
+        "PhoneNumber": 563456343
+    },
+    {
+        "Name": "ELizabeth",
+        "Email": "core@gmail.com",
+        "Age": 60,
+        "Company": "CORE",
+        "PhoneNumber": 65456456
+    },
+    {
+        "Name": "Cristian",
+        "Email": "cristian@gmail.com",
+        "Age": 22,
+        "Company": "UNIVERSITY",
+        "PhoneNumber": 124322242
+    },
+    {
+        "Name": "Julio",
+        "Email": "julio@gmail.com",
+        "Age": 35,
+        "Company": "UNIVERSITY",
+        "PhoneNumber": 345345123
+    }
+]

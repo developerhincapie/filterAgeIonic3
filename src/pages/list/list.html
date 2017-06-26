@@ -1,23 +1,51 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="morado">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title *ngIf="!selectedItem">{{title}}</ion-title>
+    <ion-title *ngIf="selectedItem">Hola: {{selectedItem.Name}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
+  <ion-list *ngIf="!selectedItem">
+    <ion-item>
+      <ion-label>Filtro</ion-label>
+      <ion-select [(ngModel)]="sliderValue">
+        <ion-option value="100">Ver todos</ion-option>
+        <ion-option value="18">Menores 18</ion-option>
+        <ion-option value="30">Menores 30</ion-option>
+        <ion-option value="50">Menores 50</ion-option>
+      </ion-select>
+    </ion-item>
+    <button ion-item *ngFor="let person of users | AgePipe:sliderValue" (click)="itemTapped($event,person)">
+      <span>Nombre: {{ person.Name  }}</span><br>
+       <span> Edad: {{ person.Age }}</span>
+  </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-start></ion-icon>
+        Nombre: {{selectedItem.Name}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail" item-start></ion-icon>
+        Email: {{selectedItem.Email}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person" item-start></ion-icon>
+        Edad: {{selectedItem.Age}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="briefcase" item-start></ion-icon>
+        Empresa: {{selectedItem.Name}}
+      </ion-item>
+      <ion-item>
+        <ion-icon name="call" item-start></ion-icon>
+        Teléfono: {{selectedItem.PhoneNumber}}
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>
